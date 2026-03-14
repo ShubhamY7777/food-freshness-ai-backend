@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+torch
+torchvision
+pillow
+numpy
+pandas
+scikit-learn
+albumentations
+python-multipart
+onnx
+onnxruntime
+tqdm
