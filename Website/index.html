@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Freshly | AI Food Freshness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🍎 Freshly</h1>
+    <p>AI Powered Food Freshness Detection</p>
+
+    <!-- Camera -->
+    <video id="camera" autoplay></video>
+    <canvas id="canvas"></canvas>
+
+    <div class="buttons">
+        <button onclick="startCamera()">📷 Open Camera</button>
+        <button onclick="capturePhoto()">📸 Capture</button>
+    </div>
+
+    <!-- Upload -->
+    <input type="file" id="galleryInput" accept="image/*">
+
+    <!-- Preview -->
+    <div id="preview"></div>
+
+    <button class="analyze" onclick="sendImage()">🔍 Analyze</button>
+
+    <!-- RESULT -->
+    <div id="result" class="hidden">
+        <h2>Result</h2>
+
+        <p><b>Status:</b> <span id="state"></span></p>
+        <p><b>Confidence:</b> <span id="confidence"></span></p>
+        <p><b>Original Days Left:</b> <span id="originalDays"></span></p>
+        <p><b>Recommended Temperature:</b> <span id="temperature"></span></p>
+        <p><b>Improved Shelf Life:</b> <span id="improvedDays"></span></p>
+
+        <div class="progress-bar-container">
+            <div id="shelfBar" class="progress-bar"></div>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
