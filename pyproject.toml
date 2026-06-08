@@ -1,0 +1,2 @@
+[tool.vercel]
+entrypoint = "src.infer_api:app"
